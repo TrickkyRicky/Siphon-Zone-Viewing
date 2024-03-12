@@ -21,17 +21,20 @@
 **Languages and Tools:**
 
 <div style="display:block;">
-<h3>Frontend:</h3>
-<code><img height="40" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/typescript/typescript.png"></code>
-<code><img height="40" src="https://github.com/TrickkyRicky/Siphon-Zone-Viewing/assets/60045899/1039a7f6-fae1-4cda-8f2f-15a704c05eee"></code>
-<code><img height="40" src="https://github.com/TrickkyRicky/Siphon-Zone-Viewing/assets/60045899/1039a7f6-fae1-4cda-8f2f-15a704c05eee"></code>
+ <h3>Frontend:</h3>
+ <code><img height="40" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/typescript/typescript.png"></code>
+ <code><img height="40" src="https://github.com/TrickkyRicky/Siphon-Zone-Viewing/assets/60045899/1039a7f6-fae1-4cda-8f2f-15a704c05eee"></code>
+  <code><img height="40" src="https://github.com/TrickkyRicky/Siphon-Zone-Viewing/assets/60045899/f802cabf-1b59-4518-914f-a3fa2154755a"></code>
+  <code><img height="40" src="https://github.com/TrickkyRicky/Siphon-Zone-Viewing/assets/60045899/d7569e10-c12e-4937-9384-2174fe55f181"></code>
   
-<h3>Backend:</h3>
-<code><img height="40" src="https://github.com/TrickkyRicky/Siphon-Zone-Viewing/assets/60045899/d3b4b279-07b0-406a-a850-7cf382013d38"></code>
-<code><img height="40" src="https://github.com/TrickkyRicky/Siphon-Zone-Viewing/assets/60045899/05174218-f9ca-4955-841c-0e7d890d7f7c"></code>
-<code><img height="40" src="https://github.com/TrickkyRicky/Siphon-Zone-Viewing/assets/60045899/7d65dc0e-a996-458e-98d0-2de8dfaf921d"></code>
-<code><img height="40" src="https://github.com/TrickkyRicky/Siphon-Zone-Viewing/assets/60045899/481a9fe3-26a1-4456-9f5e-bf5e54812a53"></code>
+ <h3>Backend:</h3>
+ <code><img height="40" src="https://github.com/TrickkyRicky/Siphon-Zone-Viewing/assets/60045899/d3b4b279-07b0-406a-a850-7cf382013d38"></code>
+ <code><img height="40" src="https://github.com/TrickkyRicky/Siphon-Zone-Viewing/assets/60045899/05174218-f9ca-4955-841c-0e7d890d7f7c"></code>
+ <code><img height="40" src="https://github.com/TrickkyRicky/Siphon-Zone-Viewing/assets/60045899/a3573684-7d1a-4702-91a0-c71fb2921d8f"></code>
+ <code><img height="40" src="https://github.com/TrickkyRicky/Siphon-Zone-Viewing/assets/60045899/e290da1f-5210-4308-8f8e-9263ee17f20e"></code>
 
-<h3>DevOps:</h3>
-<code><img height="40" src="https://github.com/TrickkyRicky/Siphon-Zone-Viewing/assets/60045899/de6cb451-5879-437b-b438-f61a785c4a60"></code>
-</div>
+ <h3>Tools:</h3>
+ <code><img height="40" src="https://github.com/TrickkyRicky/Siphon-Zone-Viewing/assets/60045899/b758d172-5f0a-431e-8f13-514eb09cf8f8"></code>
+ <code><img height="40" src="https://github.com/TrickkyRicky/Siphon-Zone-Viewing/assets/60045899/5fedfc38-c478-4a08-aa87-2f9dcd9bc769"></code>
+ <code><img height="40" src="https://github.com/TrickkyRicky/Siphon-Zone-Viewing/assets/60045899/5c4762c7-6a33-490e-8c8e-a3efc329c0cd"></code>
+ </div>
