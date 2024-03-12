@@ -22,6 +22,7 @@ Originally this application was called Siphon Manga, where you were only able to
  <code><img height="40" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/typescript/typescript.png"></code>
  <code><img height="40" src="https://github.com/TrickkyRicky/Siphon-Zone-Viewing/assets/60045899/f802cabf-1b59-4518-914f-a3fa2154755a"></code>
  <code><img height="40" src="https://github.com/TrickkyRicky/Siphon-Zone-Viewing/assets/60045899/1039a7f6-fae1-4cda-8f2f-15a704c05eee"></code>
+ <code><img height="40" src="https://github.com/TrickkyRicky/Siphon-Zone-Viewing/assets/60045899/948803cf-4b39-471b-974b-6b2493631e99"></code>
   
  <h3>Backend:</h3>
  <code><img height="40" src="https://github.com/TrickkyRicky/Siphon-Zone-Viewing/assets/60045899/e290da1f-5210-4308-8f8e-9263ee17f20e"></code>
