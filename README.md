@@ -1,9 +1,9 @@
 ## Welcome to Siphon Zone App <img src="https://media.giphy.com/media/hvRJCLFzcasrR4ia7z/giphy.gif" width="25px">
  <div align="center">
-  <img alt="Logo" src="https://user-images.githubusercontent.com/60045899/200189378-f287ec15-0bd4-4a43-9adb-ba85c7edb9dc.svg" width="100" />
+  Application video here coming soon!
 </div>
 
-### Intro
+## Intro
 
 <p align="left">
   This is an app that was created with React Native to solve the problem of watching anime, and reading novels or manga ad-free. Using<a href="https://developer.apple.com/testflight/" target="_blank">Apples Testflight</a> for IOS devices and 
@@ -18,12 +18,20 @@
 
 <br/>
 
-**languages and tools:**
+**Languages and Tools:**
 
 <div style="display:block;">
 <h3>Frontend:</h3>
 <code><img height="40" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/typescript/typescript.png"></code>
-<code><img height="40" src="https://github.com/TrickkyRicky/Siphon-Zone-Viewing/assets/60045899/eb735e2d-d343-4197-9f59-94ab856901f7"></code>
+<code><img height="40" src="https://github.com/TrickkyRicky/Siphon-Zone-Viewing/assets/60045899/1039a7f6-fae1-4cda-8f2f-15a704c05eee"></code>
+<code><img height="40" src="https://github.com/TrickkyRicky/Siphon-Zone-Viewing/assets/60045899/1039a7f6-fae1-4cda-8f2f-15a704c05eee"></code>
   
 <h3>Backend:</h3>
+<code><img height="40" src="https://github.com/TrickkyRicky/Siphon-Zone-Viewing/assets/60045899/d3b4b279-07b0-406a-a850-7cf382013d38"></code>
+<code><img height="40" src="https://github.com/TrickkyRicky/Siphon-Zone-Viewing/assets/60045899/05174218-f9ca-4955-841c-0e7d890d7f7c"></code>
+<code><img height="40" src="https://github.com/TrickkyRicky/Siphon-Zone-Viewing/assets/60045899/7d65dc0e-a996-458e-98d0-2de8dfaf921d"></code>
+<code><img height="40" src="https://github.com/TrickkyRicky/Siphon-Zone-Viewing/assets/60045899/481a9fe3-26a1-4456-9f5e-bf5e54812a53"></code>
+
+<h3>DevOps:</h3>
+<code><img height="40" src="https://github.com/TrickkyRicky/Siphon-Zone-Viewing/assets/60045899/de6cb451-5879-437b-b438-f61a785c4a60"></code>
 </div>
