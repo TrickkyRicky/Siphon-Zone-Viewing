@@ -6,11 +6,11 @@
 ## Intro
 
 <p align="left">
-  This is an app that was created with React Native to solve the problem of watching anime, and reading novels or manga ad-free. Using <a href="https://developer.apple.com/testflight/" target="_blank">Apples Testflight</a>   for IOS devices and APK's for Android devices. There are 3 services for the application and they are all hosted through <a href="https://aws.amazon.com/">Amazon Web Services</a>. 
+  This is an app that was created with React Native to solve the problem of watching anime, and reading novels or manga ad-free. Using <a href="https://developer.apple.com/testflight/" target="_blank">Apples Testflight</a>   for IOS devices and APKs for Android devices. There are 4 services for the application and they are all hosted within a <a href="https://www.digitalocean.com/">Digital Ocean</a> Droplet, which runs a <a href="https://www.docker.com/">Docker</a> container with all the services. 
 </p>
 
 <p align="left">
-Originally this application was called Siphon Manga, where you were only able to read manga on the app, due to the high demand for Anime, and Novels. I decided to rewrite the application to organize and have a scalable design for my users. The Backend of this application started with Node.js and Express, but with the rewrite, I decided to break the server architecture into microservices for better scalability in AWS. For the Animated content I use Spring Boot, for Manga I use Node.js, and for Novels Golang. I've chosen these select few languages to keep my skills in them retained and sharp for future updates and job opportunities.
+Originally this application was called Siphon Manga, where you could only read manga on the app, but due to the high demand for Anime, and Novels. I decided to rewrite the application to organize and have a scalable design for my users. The Backend of this application started with Node.js and Express, but with the rewrite, I decided to break the server architecture into microservices for better scalability and separation of concerns. For the Animated content I use Spring Boot, for Manga I use Node.js with Typescript, for Novels Golang, and I integrated a proxy gateway to route requests to the correct services with Node.js. I've chosen these select few languages to keep my skills in them retained and sharp for future updates and job opportunities.
 </p>
 
 <br/>
