@@ -1,37 +1,118 @@
-## Welcome to Siphon Zone App <img src="https://media.giphy.com/media/hvRJCLFzcasrR4ia7z/giphy.gif" width="25px">
- <div align="center">
-  Application video here coming soon!
+<div align="center">
+
+# Siphon Zone
+
+<a href="media/demo.mp4"><img src="media/manga-home.png" width="280" alt="Siphon Zone app demo"></a>
+<br><sub>Click the preview for the full demo video.</sub>
+
 </div>
 
-## Intro
+## What is this?
 
-<p align="left">
-  This is an app that was created with React Native to solve the problem of watching anime, and reading novels or manga ad-free. Using <a href="https://developer.apple.com/testflight/" target="_blank">Apples Testflight</a>   for IOS devices and APKs for Android devices. There are 4 services for the application and they are all hosted within a <a href="https://www.digitalocean.com/">Digital Ocean</a> Droplet, which runs a <a href="https://www.docker.com/">Docker</a> container with all the services. 
-</p>
+Siphon Zone is a mobile app (iOS/Android) where you can read manga, read novels, and watch live, 24/7 anime channels with no ads. The services, are made up of independent backend services that fetch data, cleans, and enriches content from across the web, stores it on a self-hosted media server, and serves it to the app through a single secure gateway.
 
-<p align="left">
-Originally this application was called Siphon Manga, where you could only read manga on the app, but due to the high demand for Anime, and Novels. I decided to rewrite the application to organize and have a scalable design for my users. The Backend of this application started with Node.js and Express, but with the rewrite, I decided to break the server architecture into microservices for better scalability and separation of concerns. For the Animated content I use Spring Boot, for Manga I use Node.js with Typescript, for Novels Golang, and I integrated a proxy gateway to route requests to the correct services with Node.js. I've chosen these select few languages to keep my skills in them retained and sharp for future updates and job opportunities.
-</p>
+It started in 2023 as a single Node.js app called **Siphon Manga** that only did one thing: read manga. Since then it's been rebuilt from the ground up into a 12 service distributed system, that run entirely on self-hosted infrastructure, with its own observability stack, background job queues, and an AI model for generating content descriptions. The rewrite was deliberate: each content type (manga / anime / novels) gets its own backend service to have a proper seperation of concerns.
 
-<br/>
+<table align="center">
+  <tr>
+    <td align="center"><img src="media/manga-home.png" width="190"><br><sub>Manga home</sub></td>
+    <td align="center"><img src="media/manga-detail.png" width="190"><br><sub>Manga detail</sub></td>
+    <td align="center"><img src="media/reader.png" width="190"><br><sub>Reader</sub></td>
+    <td align="center"><img src="media/browse.png" width="190"><br><sub>Browse</sub></td>
+  </tr>
+  <tr>
+    <td align="center"><img src="media/search.png" width="190"><br><sub>Search</sub></td>
+    <td align="center"><img src="media/live-anime.png" width="190"><br><sub>Live anime TV</sub></td>
+    <td align="center"><img src="media/library.png" width="190"><br><sub>Library</sub></td>
+    <td align="center"><img src="media/library-updates.png" width="190"><br><sub>Library updates</sub></td>
+  </tr>
+  <tr>
+    <td align="center"><img src="media/manga-continue-reading.png" width="190"><br><sub>Continue reading</sub></td>
+    <td align="center"><img src="media/library-history.png" width="190"><br><sub>History</sub></td>
+    <td align="center"><img src="media/settings-dark.png" width="190"><br><sub>Settings (dark)</sub></td>
+    <td align="center"><img src="media/manga-home-light.png" width="190"><br><sub>Light theme</sub></td>
+  </tr>
+</table>
 
-**Languages and Tools:**
+<p align="center"><sub>Full demo video: <a href="media/demo.mp4">demo.mp4</a></sub></p>
 
-<div style="display:block;">
- <h3>Frontend:</h3>
- <code><img height="40" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/typescript/typescript.png"></code>
- <code><img height="40" src="https://github.com/TrickkyRicky/Siphon-Zone-Viewing/assets/60045899/f802cabf-1b59-4518-914f-a3fa2154755a"></code>
- <code><img height="40" src="https://github.com/TrickkyRicky/Siphon-Zone-Viewing/assets/60045899/1039a7f6-fae1-4cda-8f2f-15a704c05eee"></code>
- <code><img height="40" src="https://github.com/TrickkyRicky/Siphon-Zone-Viewing/assets/60045899/948803cf-4b39-471b-974b-6b2493631e99"></code>
-  
- <h3>Backend:</h3>
- <code><img height="40" src="https://github.com/TrickkyRicky/Siphon-Zone-Viewing/assets/60045899/e290da1f-5210-4308-8f8e-9263ee17f20e"></code>
- <code><img height="40" src="https://github.com/TrickkyRicky/Siphon-Zone-Viewing/assets/60045899/d3b4b279-07b0-406a-a850-7cf382013d38"></code>
- <code><img height="40" src="https://github.com/TrickkyRicky/Siphon-Zone-Viewing/assets/60045899/05174218-f9ca-4955-841c-0e7d890d7f7c"></code>
- <code><img height="40" src="https://github.com/TrickkyRicky/Siphon-Zone-Viewing/assets/60045899/a3573684-7d1a-4702-91a0-c71fb2921d8f"></code>
+## Why this is interesting from an engineering standpoint
 
- <h3>Tools:</h3>
- <code><img height="40" src="https://github.com/TrickkyRicky/Siphon-Zone-Viewing/assets/60045899/5c4762c7-6a33-490e-8c8e-a3efc329c0cd"></code>
- <code><img height="40" src="https://github.com/TrickkyRicky/Siphon-Zone-Viewing/assets/60045899/b758d172-5f0a-431e-8f13-514eb09cf8f8"></code>
- <code><img height="40" src="https://github.com/TrickkyRicky/Siphon-Zone-Viewing/assets/60045899/5fedfc38-c478-4a08-aa87-2f9dcd9bc769"></code>
- </div>
+- **Polyglot microservices, on purpose.** 10+ backend services across TypeScript/NestJS, Java/Spring Boot, Go, and C#/.NET, all talking to the same PostgreSQL database and sharing API contracts generated from a single set of **Protocol Buffer** definitions so a schema change in one place regenerates typed clients for every language at once, I did this on purpose because alot of my other apps use different backend languages and this keeps my skills sharp.
+- **Data fetching pipeline** Scrapers fall back through multiple strategies (direct HTTP - a pool of headless-Chrome FlareSolverr instances - Playwright) to get past Cloudflare bot-challenges, with tunable worker concurrency and automatic retry/backoff.
+- **Background job processing, in two different ecosystems.** The manga scraper runs on **BullMQ/Redis** queues; the novel scraper (written in Go) runs on **Asynq** both handle thousands of chapter-download jobs with bounded concurrency instead of blocking request threads.
+- **Cross-source identity resolution.** The same series often exists on multiple source sites under different names. A Jaccard token-similarity matcher reconciles titles against AniList/MyAnimeList/Kitsu IDs, cross-validates conflicting matches, and de-duplicates automatically a small but real data-matching/trust problem.
+- **Self-hosted AI enrichment.** A locally-run **Ollama** LLM generates missing plot descriptions during metadata enrichment.
+- **Real observability.** Centralized logs via **Grafana + Loki + Promtail**, plus a custom monitoring dashboard/API.
+- **Production infra engineering** The whole stack runs on a self-hosted NAS via Docker Compose, with purpose-built deployment tooling: schema-readiness gating so services don't boot before their tables exist, scoped redeploys so a one-line manga fix doesn't rebuild the JVM services.
+- **Edge-auth model.** The gateway verifies JWTs and resolves them to a device identity once, then passes a trusted header downstream. The internal services don't each re-implement auth, they trust the edge.
+
+## Architecture
+
+```mermaid
+flowchart TB
+    subgraph Client["📱 Client"]
+        App["Siphon Zone App<br/>React Native · Expo · Tamagui"]
+    end
+
+    subgraph Edge["Edge"]
+        GW["Gateway - Node/Express<br/>JWT auth · rate limiting · routing"]
+    end
+
+    subgraph Content["Content APIs"]
+        Manga["Manga Backend<br/>NestJS"]
+        Anime["Anime Backend<br/>Spring Boot · Java 21"]
+        Novels["Novels Backend<br/>ASP.NET Core 9"]
+    end
+
+    subgraph Pipeline["Data Pipeline"]
+        MangaData["Manga Fetcher<br/>NestJS + BullMQ"]
+        NovelData["Novel Fetcher<br/>Go + Asynq"]
+        MetaData["Metadata Fetcher<br/>Spring Boot"]
+        Ollama["Ollama LLM<br/>AI descriptions"]
+        Flare["FlareSolverr pool<br/>anti-bot bypass"]
+    end
+
+    subgraph Storage["Storage"]
+        PG[("PostgreSQL")]
+        Redis[("Redis")]
+        NAS[("Self-hosted NAS<br/>media files")]
+    end
+
+    subgraph Obs["Observability"]
+        Promtail --> Loki --> Grafana
+    end
+
+    App --> GW
+    GW --> Manga & Anime & Novels
+    Manga & Anime & Novels --> PG
+    Manga --> NAS
+
+    MangaData --> Flare
+    NovelData --> Flare
+    MangaData --> Redis
+    NovelData --> Redis
+    MangaData --> PG & NAS
+    NovelData --> PG & NAS
+    MetaData --> PG
+    MetaData --> Ollama
+```
+
+## The services
+
+| Service | Stack | Role |
+|---|---|---|
+| **Siphon-Zone-App** | React Native, Expo, Tamagui, TanStack Query | Cross-platform iOS/Android client |
+| **Siphon-Zone-Gateway** | Node.js, Express, JWT | Edge API gateway - auth, rate limiting, request routing |
+| **Siphon-Zone-Manga-Backend** | NestJS, TypeScript | Manga catalog, search, reader, bookmarks & history |
+| **Siphon-Zone-Anime-Backend** | Spring Boot, Java 21 | Anime catalog & live-TV channel API |
+| **Siphon-Zone-Novels-Backend** | ASP.NET Core 9, C#, Dapper | Novel catalog & reader API |
+| **Siphon-Zone-Data/Siphon-Zone-Manga** | NestJS, BullMQ, Playwright, Sharp | Data fetch, dedupes, and stores manga chapters |
+| **Siphon-Zone-Data/Siphon-Zone-Novel** | Go, Asynq, Colly | Data fetch and stores novel chapters |
+| **Siphon-Zone-Data/Siphon-Zone-MetaData** | Spring Boot, Java | Enriches series with AniList/MAL/Kitsu data + AI descriptions |
+| **Siphon-Zone-Shared-Types** | Protocol Buffers | Single source of truth for API contracts across every language |
+| **Siphon-Zone-Config** | Docker Compose, Grafana, Loki, Promtail | Infrastructure, observability, and deployment tooling |
+
+## Distribution
+
+Shipped to real users via [Apple TestFlight](https://developer.apple.com/testflight/) for iOS and signed APKs for Android.
