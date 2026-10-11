@@ -36,7 +36,7 @@ It started in 2023 as a single Node.js app called **Siphon Manga** that only did
 
 <p align="center"><sub>Full demo video: <a href="media/demo.mp4">demo.mp4</a></sub></p>
 
-## Why this is interesting from an engineering standpoint
+## Why I built it this way
 
 - **Polyglot microservices, on purpose.** 10+ backend services across TypeScript/NestJS, Java/Spring Boot, Go, and C#/.NET, all talking to the same PostgreSQL database and sharing API contracts generated from a single set of **Protocol Buffer** definitions so a schema change in one place regenerates typed clients for every language at once, I did this on purpose because alot of my other apps use different backend languages and this keeps my skills sharp.
 - **Data fetching pipeline** Scrapers fall back through multiple strategies (direct HTTP - a pool of headless-Chrome FlareSolverr instances - Playwright) to get past Cloudflare bot-challenges, with tunable worker concurrency and automatic retry/backoff.
