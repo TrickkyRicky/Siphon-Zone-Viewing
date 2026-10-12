@@ -2,8 +2,7 @@
 
 # Siphon Zone
 
-<a href="media/demo.mp4"><img src="media/manga-home.png" width="280" alt="Siphon Zone app demo"></a>
-<br><sub>Click the preview for the full demo video.</sub>
+<img src="media/demo.gif" width="280" alt="Siphon Zone app demo">
 
 </div>
 
